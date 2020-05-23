@@ -37,7 +37,7 @@ namespace ChampionsOfForest.Player
 
         public static void FillSpells()
         {
-            Spell bh = new Spell(1, 119, 20, 50, 120, "Black Hole", "Creates a black hole that pulls enemies in and damages them every second")
+            Spell bh = new Spell(1, 119, 20, 50, 120, "Schwarzes Loch", "Zaubert ein Schwarzes Loch, das jeden Gegner einsaugt und DMG/s verursacht")
             {
                 active = SpellActions.CreatePlayerBlackHole,
 
