@@ -42,12 +42,12 @@ namespace ChampionsOfForest.Player
                 active = SpellActions.CreatePlayerBlackHole,
 
             };
-            Spell healingDome = new Spell(2, 122, 6, 80, 70, "Healing Dome", "Creates a sphere of vaporized aloe that heals all allies inside. Items can further expand this ability to cleanese debuffs. Scales with healing multipier and spell amplification.")
+            Spell healingDome = new Spell(2, 122, 6, 80, 70, "Heilende Aura", "Creates a sphere of vaporized aloe that heals all allies inside. Items can further expand this ability to cleanese debuffs. Scales with healing multipier and spell amplification.")
             {
                 active = SpellActions.CreateHealingDome,
 
             };
-            new Spell(3, 121, 3, 25, 12, "Blink", "Short distance teleportation")
+            new Spell(3, 121, 3, 25, 12, "Sprung", "Short distance teleportation")
             {
                 active = SpellActions.DoBlink,
                 CastOnRelease = true,
