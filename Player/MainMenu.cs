@@ -25,17 +25,17 @@ namespace ChampionsOfForest
 		public string[] DiffSel_Names = new string[] { "Easy", "Veteran", "Elite", "Master", "Challenge I", "Challenge II", "Challenge III", "Challenge IV", "Challenge V", "Challenge VI", "Hell", };
 		public string[] DiffSel_Descriptions = new string[]
 		{
-			"Easiest difficulty, recommended for new games.",
-			"Much harder than normal difficulty, tougher enemies. \nUnlocks higher tier loot. Recommended level 15+",
-			"Tougher enemies and more experience. For those who can kill elites at previous difficulty.",
-			"Unlocks higher tier of items. For strong players only. Enemies are much tougher ",
-			"Challenge I unlocks 6th tier of items. \nWith every challenge difficulty enemies are stronger, and their bounties are higher",
-			"Challenge II unlocks 7th tier of items - legendary gear. \nWith every challenge difficulty enemies are stronger, and their bounties are higher",
-			"Challenge III\nWith every challenge difficulty enemies are stronger, and their bounties are higher",
-			"Challenge IV\nWith every challenge difficulty enemies are stronger, and their bounties are higher",
-			"Challenge V  \nWith every challenge difficulty enemies are stronger, and their bounties are higher",
-			"Challenge VI  \nWith every challenge difficulty enemies are stronger, and their bounties are higher",
-			"Hell  \nHarder than Challenge VI, every enemy is an elite. Made to bully Alex Armsy.",
+			"Einfachster Schwierigkeitsgrad, empfohlen für neue Spieler.",
+			"Schwieriger als Easy. \nHöhere Chance auf höherwertigere Ausrüstung (Lvl 15+)",
+			"Stärkere Gegner, mehr Erfahrungspunkte. Für Spieler empfohlen die Elite Gegner im vorigen Schwierigkeitsgrad einfach erlegen können.",
+			"Höhere Chance auf bessere Ausrüstung. Für erfahrene Spieler empfohlen. Gegner sind Stärker",
+			"Challenge I Erhöhte Chance auf Tier 6 Items. \nMit jeder höheren Challenge Stufe erhöt sich die Stärke der Gegner und die erhaltenen Erfahrungspunkte.",
+			"Challenge II Erhöhte Chance auf Tier 7 Items (Legendäre Ausrüstung). \nMit jeder höheren Challenge Stufe erhöt sich die Stärke der Gegner und die erhaltenen Erfahrungspunkte.",
+			"Challenge III\nMit jeder höheren Challenge Stufe erhöt sich die Stärke der Gegner und die erhaltenen Erfahrungspunkte.",
+			"Challenge IV\nMit jeder höheren Challenge Stufe erhöt sich die Stärke der Gegner und die erhaltenen Erfahrungspunkte.",
+			"Challenge V  \nMit jeder höheren Challenge Stufe erhöt sich die Stärke der Gegner und die erhaltenen Erfahrungspunkte.",
+			"Challenge VI  \nMit jeder höheren Challenge Stufe erhöt sich die Stärke der Gegner und die erhaltenen Erfahrungspunkte.",
+			"Hell  \nSchwieriger als Challenge VI, Jeder Gegner ist ein Elite Monster.",
 
 		};
 		private int DiffSelPage = 0;
