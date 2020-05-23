@@ -37,68 +37,68 @@ namespace ChampionsOfForest.Player
 
         public static void FillSpells()
         {
-            Spell bh = new Spell(1, 119, 20, 50, 120, "Schwarzes Loch", "Zaubert ein Schwarzes Loch, das jeden Gegner einsaugt und DMG/s verursacht")
+            Spell bh = new Spell(1, 119, 20, 50, 120, "Schwarzes Loch", "Zaubert ein Schwarzes Loch, das jeden Gegner einsaugt und DMG/s verursacht.")
             {
                 active = SpellActions.CreatePlayerBlackHole,
 
             };
-            Spell healingDome = new Spell(2, 122, 6, 80, 70, "Heilende Aura", "Creates a sphere of vaporized aloe that heals all allies inside. Items can further expand this ability to cleanese debuffs. Scales with healing multipier and spell amplification.")
+            Spell healingDome = new Spell(2, 122, 6, 80, 70, "Heilende Aura", "Erschafft eine Sphäre aus verdunstetem Aloe Vera, das alle Spieler innerhalb heilt. Mithilfe Diverser Ausrüstung kann der Effekt ausgeweitet werden um Debuffs zu entfernen. Hängt zusammen mit dem Heilmultiplikator sowie der Zauber Verstärkung.")
             {
                 active = SpellActions.CreateHealingDome,
 
             };
-            new Spell(3, 121, 3, 25, 12, "Sprung", "Short distance teleportation")
+            new Spell(3, 121, 3, 25, 12, "Sprung", "Teleportation dich über eine kurze Distanz.")
             {
                 active = SpellActions.DoBlink,
                 CastOnRelease = true,
                 aim = SpellActions.DoBlinkAim,
                 
             };
-            new Spell(4, 120, 10, 100, 45, "Eruption", "A light column heals players inside and gives them +25% movement speed, while slowing damaging enemies. Slow amount is equal to 25%")
+            new Spell(4, 120, 10, 100, 45, "Sonnenerruption", "Eine Lichtsäule heilt alle Spieler de sich darin befinden und erhöht die Bewegungsgeschwindigkeit um +25%, wärend es dem Gegner Verlangsamt um -25% sowie Schaden zufügt.")
             {
                 active = SpellActions.CastFlare,
                 
             };
-            new Spell(5, 118, 8, 50, "Sustain Shield", "Channeling this spell consumes energy but grants you a protective, absorbing shield. The shield's power increases every second untill reaching max value. Upon ending the channeling by any source, the shield persist for a short amount of time, and after that it rapidly decreases.")
+            new Spell(5, 118, 8, 50, "Aktiver Schild", "das Wirken dieses Zaubers, zieht permanent Energie solange er Aktiv ist, erhöht die Verteidigung und Absorbiert Schaden. Die Stärke des Schildes wächst bis zu einem gewissen Maximum. Wird der Zauber durch einen anderen abgebrochen, bleibt der Schild solange bestehen bis seine Stärke wieder auf 0 gefallen ist.")
             {
                 active = SpellActions.CastSustainShieldActive,
                 passive = SpellActions.CastSustainShielPassive,
                 usePassiveOnUpdate = true,
             
             };
-            new Spell(6, 117, 2, 10, 0.4f, "Wide Reach", "Picks up all resources in a small radius around you.")
+            new Spell(6, 117, 2, 10, 0.4f, "Weitblick", "Nimmt Ressourcen in einem kleinen Radius um dich herum Automatisch auf.")
             {
                 active = AutoPickupItems.DoPickup,            
             };
-            new Spell(7, 115, 17, 25, 2f, "Schwarze Flamme", "Ignites your weapon with a dark flame that empowers all attacks.")
+            new Spell(7, 115, 17, 25, 2f, "Schwarze Flamme", "Entzündet deine Waffe mit einer Dunklen Flamme, die alle deine Angriffe Verstärken.")
             {
                 active =BlackFlame.Toggle,            
             };
-            new Spell(8,123, 12, 80, 110, "Kriegsschrei", "Empowers you and nearby allies for 2 minutes.")
+            new Spell(8,123, 12, 80, 110, "Kriegsschrei", "Stärkt dich und alle Spieler in deiner Umgebung für 2 Minuten.")
             {
                 active =SpellActions.CastWarCry,            
             };
-            new Spell(9, 114, 15, 100, 35, "Portal", "Creates a wormhole, that links 2 locations. Allows the player and items to pass through.")
+            new Spell(9, 114, 15, 100, 35, "Portal", "Wirkt ein Portal das 2 Orte miteinander Verbindet. Erlaubt es dem Spieler schnell von A nach B zu gelangen, und Ressourcen zu Transportieren.")
             {
                 active =SpellActions.CastPortal,            
             };
-            new Spell(10, 125, 30, 90, 20, "Verzauberter Pfeil", "A large arrow is shot where you're looking at. Slows any enemies on hit and deals big damage")
+            new Spell(10, 125, 30, 90, 20, "Verzauberter Pfeil", "Ein Großer Pfeil wird bei Wirkung dieses Zaubers in die Richtung abgeschossen in die du schaust. Verlangsamt jeden Gegner bei einem Treffer und fügt großen Schaden zu.")
             {
                 active =SpellActions.CastMagicArrow,            
             };
-            new Spell(11, 127, 35, 10, 10, "Multischuss", "An attack modifier. Enchants your ranged weapons to shoot multipe projectiles. Upgradeable by perks. Energy is consumed upon firing and depends on the amount of projectiles fired")
+            new Spell(11, 127, 35, 10, 10, "Multischuss", "Attacken-Modifizierer: Verzaubert deine Bögen sodass du mehrere Pfeile auf einmal Abschießen kannst. Verstärkbar durch Perks. Energie wird verbraucht nach jedem Schuss, sowie je nachdem wieviele Pfeile verschießt werden.")
             {
                 active =SpellActions.ToggleMultishot,            
             };
-            new Spell(12, 133, 40,50, 150, "Gold", "For 40 seconds you turn completely immune to stuns and attack speed increases by 20%")
+            new Spell(12, 133, 40,50, 150, "Gold", "Du wirst für 40 Sekunden Immun gegen jegliche Stun's und die Geschwindigkeit mit der du Zuschlägst steigt um +20%.")
             {
                 active =Gold.Cast,            
             };
-            new Spell(13, 132, 7, 40, 15, "Säuberung", "Everyone in your surroudings gets cleansed of their negative debuffs. Negates poison.")
+            new Spell(13, 132, 7, 40, 15, "Säuberung", "Alle Spieler die sich im Radius dieses Zaubers befinden, werden von jeglichen Debuffs befreit. Neutralisiert Vergiftung.")
             {
                 active =SpellActions.CastPurge,            
             };
-            new Spell(14, 128, 20, 280, 40, "Snap Freeze", "Enemies around you get slowed for 12 seconds by 90% you deal magic damage to them")
+            new Spell(14, 128, 20, 280, 40, "Einfrieren", "Gegner die sich im Radius befinden, werden für 12 Sekunden verlangsamt um -90%, wärend sie kontinuierlich Schaden erleiden.")
             {
                 active =SpellActions.CastSnapFreeze,            
             };
