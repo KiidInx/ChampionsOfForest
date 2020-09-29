@@ -42,19 +42,19 @@ namespace ChampionsOfForest.Player
                 active = SpellActions.CreatePlayerBlackHole,
 
             };
-            Spell healingDome = new Spell(2, 122, 6, 80, 70, "Heilende Aura", "Erschafft eine Sphäre aus verdunstetem Aloe Vera, das alle Spieler innerhalb heilt. Mithilfe Diverser Ausrüstung kann der Effekt ausgeweitet werden um Debuffs zu entfernen. Hängt zusammen mit dem Heilmultiplikator sowie der Zauber Verstärkung.")
+            Spell healingDome = new Spell(2, 122, 6, 80, 70, "Heilende Aura", "Erschafft eine Sphäre aus verdunstetem Aloe Vera, das alle Spieler, innerhalb der Sphäre, heilt. Mithilfe Diverser Ausrüstung kann der Effekt ausgeweitet werden um Debuffs zu entfernen. Hängt zusammen mit dem Heilmultiplikator sowie der Zauber Verstärkung.")
             {
                 active = SpellActions.CreateHealingDome,
 
             };
-            new Spell(3, 121, 3, 25, 12, "Sprung", "Teleportation dich über eine kurze Distanz.")
+            new Spell(3, 121, 3, 25, 12, "Sprung", "Teleportiert dich über eine kurze Distanz.")
             {
                 active = SpellActions.DoBlink,
                 CastOnRelease = true,
                 aim = SpellActions.DoBlinkAim,
                 
             };
-            new Spell(4, 120, 10, 100, 45, "Sonnenerruption", "Eine Lichtsäule heilt alle Spieler de sich darin befinden und erhöht die Bewegungsgeschwindigkeit um +25%, wärend es dem Gegner Verlangsamt um -25% sowie Schaden zufügt.")
+            new Spell(4, 120, 10, 100, 45, "Sonnenerruption", "Eine Lichtsäule heilt alle Spieler die sich darin befinden und erhöht die Bewegungsgeschwindigkeit um +25%, wärend es den Gegner um -25% Verlangsamt sowie Schaden zufügt.")
             {
                 active = SpellActions.CastFlare,
                 
@@ -98,15 +98,15 @@ namespace ChampionsOfForest.Player
             {
                 active =SpellActions.CastPurge,            
             };
-            new Spell(14, 128, 20, 280, 40, "Einfrieren", "Gegner die sich im Radius befinden, werden für 12 Sekunden verlangsamt um -90%, wärend sie kontinuierlich Schaden erleiden.")
+            new Spell(14, 128, 20, 280, 40, "Einfrieren", "Gegner die sich im Radius befinden, werden für 12 Sekunden um -90% verlangsamt, wärend sie kontinuierlich Schaden erleiden.")
             {
                 active =SpellActions.CastSnapFreeze,            
             };
-            new Spell(15, 131, 25, 15, 180, "Berserker", "For short amount of time, gain damage, attack speed and movement speed, take additional damage and have unlimited stamina.")
+            new Spell(15, 131, 25, 15, 180, "Berserker", "Für kurze Zeit, steigt dein Schaden sowie deine Angriffsgeschwindigkeit, Bewegungsgeschwindigkeit und du erhältst unbegrenzt Ausdauer, jedoch steigt der erlittene Schaden.")
             {
                 active =Berserker.Cast,            
             };
-            new Spell(16, 130, 42, 300, 90, "Lichtkugel", "A slow moving, bouncing ball of lightning travels forward, dealing damage to hit enemies, and upon contact or when it lasts too long, it explodes. Scales with 320% spell damage.")
+            new Spell(16, 130, 42, 300, 90, "Lichtkugel", "Eine sich Langsam vorwärts bewegende Lichtkugel, richtet Schaden an Feinden an, bei Kontakt oder wenn dieser zu lange wirkt, Explodiert die Lichtkugel und fügt 320% deines Zauberschadens an.")
             {
                 active =SpellActions.CastBallLightning,            
             };
